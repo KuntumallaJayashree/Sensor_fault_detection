@@ -1,0 +1,112 @@
+why do we need virtual environment?????
+--Helps to keep dependencies required by different projects separate by creatig an isolating environment
+----------------------------------------------------------------------------------------------------------
+
+##setup.py is a module used to build and distribute Python packages
+##contains information about the package, such as its name, version, and dependencies,
+frameworks are also libraries(packages)-- collection of libraries=Framework
+pandas-library --for global usage purpose
+sensor--refers as project as this is used only for specific purpose in specific work area.
+pandas = sensor = library 
+library
+packages
+framework
+Python Terminology:
+A script is a Python file that’s intended to be run directly.scripts will often contain code written outside the scope of any classes or functions.
+A module is a Python file that’s intended to be imported into scripts or other modules.often defines members like classes, functions, and variables intended to be used in other files that import it.
+A package is a collection of related modules that work together to provide certain functionality.This folder will often contain a special __init__ file that tells Python it’s a package, potentially containing more modules nested within subfolders
+A library is an umbrella term that loosely means “a bundle of code.” These can have tens or even hundreds of individual modules that can provide a wide range of functionality. Matplotlib is a plotting library. The Python Standard Library contains hundreds of modules for performing common tasks, 
+
+
+------------------------
+"HYPHEN_E_DOT == "-e .""
+
+-e . ==> this is referring to find_packages
+this searches for setup.py file for finf_packages in the project
+
+we can install requirements.txt file without -e . -- this wont install setup and wont build packages
+
+
+
+
+
+from typing import List
+def req_list()->List[str]:
+        with open(req_file_name) as file:
+                file_list = file.readlines()
+                file_list = [req_listname.replace("\n","") for req_listname in file_list]
+                if hyphen_e_dot in file_list:
+                        print(True)
+                        file_list.remove(hyphen_e_dot)
+                print(file_list)
+        
+------------------------------------------------------------------------------
+---------------------------------
+PIPELINE TERM:
+
+What is pipeline?
+
+        A sequence of steps so that execution happens in an order
+        To maintain the sequence and execute the steps
+
+How many types of pipelines w.r.t the project?
+         1) Training pipeline
+         2) Prediction pipeline
+
+--------------------------------------------------------------------------------------
+What are components????????
+
+Components are steps that involve in the pipeline.
+Data ingestion
+Data transformation
+Data validation
+Model trainer
+Model evaluation
+Model pusher
+
+
+----------------------------------------------------------------------------------------
+what is data_access?-- communicate with database
+This folder is to connect with database and pull the data in csv format.
+This is used in data ingestion.
+
+
+----------------------------------------------------------------------------------------
+what is the difference between object storage and file storage???????????
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+What is the use of cloud storage folder?
+
+how to upload,save model, download model. Create s3 bucket...
+Cloud Storage enables organizations to store, access, and maintain data so that they do not need to own 
+and operate their own data centers,moving expenses from a capital expenditure model to operational.
+
+-----------------------------------------------------------------------------------------------
+what is ORM ER?
+ER - Entity Relationship diagram
+ORM - Object relational mapping----> Similar to ER diagram--a connectivity image
+a technique used in creating a "bridge" between programming code(object oriented program)
+and database structure
+
+--------------------------------------------------------------------------------------------------
+
+Entity folder ?? To define input and output of every component.
+--------------------------------------------------------------------------------------------------
+
+what is articraft in ML?
+Artifacts is common ML term used to describe the output created by the training process or any pipeline
+
+config_entity?   from where input to be brought to process at each step.
+
+ml folder?
+feature transformation,custome model, custome grapph and such code.
+
+
+         
+
