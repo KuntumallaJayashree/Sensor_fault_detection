@@ -24,7 +24,7 @@ setup(
     name= "sensor",
     version="0.0.1",
     author="ineuron_industry_ready_projects",
-    author_email= "jayashreekdsba@gmail.com",
+    author_email="jayashreekdsba@gmail.com",
     packages=find_packages(),
-    install_requires = get_requirements(),
+    install_requires=get_requirements()
     )
