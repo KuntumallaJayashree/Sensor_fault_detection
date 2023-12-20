@@ -106,7 +106,20 @@ config_entity?   from where input to be brought to process at each step.
 
 ml folder?
 feature transformation,custome model, custome grapph and such code.
+-----------------------------------------------------------------------------------------
 
+from_root helps with declaring absolute paths relative to your project root
+from_here comes in handy when you want to declare a path relative to the current file
+
+
+--------------------------------------------------------------------------------------------
+Data classes in Python??????/
+
+In Python, a data class is a class that is designed to only hold data values. 
+They aren't different from regular classes, but they usually don't have any other methods. 
+They are typically used to store information that will be passed between different parts of a program or a system
+
+from dataclasses import dataclass
 
          
 
